@@ -1,0 +1,29 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.env
+
+# Runtime artefacts
+outputs/
+debug_outputs/
+*.csv
+!configs/*.csv
+
+# Models / weights — слишком тяжёлые для HF Space free tier
+models/
+*.pt
+*.onnx
+*.bin
+*.safetensors
+
+# Большие тестовые видео — раздаются организаторами отдельно
+*.mp4
+!examples/*.mp4
+
+# IDE/OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
